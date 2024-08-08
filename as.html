@@ -8,12 +8,20 @@
 	<head>
 		<title>&copy;VOYAGER - Linia AS</title>
 		<link rel="icon" type="image/x-icon" href="/images/logofavi.svg">
+		<link href="dist/css/lightbox.css" rel="stylesheet" />
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<style>
 			html {
 				scroll-behavior: smooth;
+			}
+			a[data-lightbox] {
+				display: none;
+			}
+
+			.image.featured {
+				display: block;
 			}
 		</style>
 	</head>
@@ -81,15 +89,38 @@
 					</div>
 				</div>
 
-			<!-- Highlights -->
-				<section id="highlights" class="wrapper style3">
-					<div class="title">produkty AS</div>
-					<div class="container">
-						<div class="row aln-center">
-							
+			<!-- Gallery -->
+			<section id="highlights" class="wrapper style3">
+				<div class="title">produkty AS</div>
+				<div class="container">
+					<div class="row aln-center">
+						<div class="col-4 col-12-medium">
+							<section class="highlight">
+								<a href="images/AS/as567.jpg" data-lightbox="gallery1" class="image featured"><img src="images/AS/as567.jpg" alt="AS Model 567" /></a>
+								<a href="images/AS/as567-2.jpg" data-lightbox="gallery1" style="display: none;"></a>
+								<a href="images/AS/as567-3.jpg" data-lightbox="gallery1" style="display: none;"></a>
+								<h3>AS Model 567</h3>
+								<p>Wymiary:<br>Szer X cm x Wys. X cm</p>
+								<ul class="actions">
+								</ul>
+							</section>
+						</div>
+						<div class="col-4 col-12-medium">
+							<section class="highlight">
+								<a href="images/AS/as493-1.jpg" data-lightbox="gallery2" class="image featured"><img src="images/AS/as493-1.jpg" alt="AS Model 493" /></a>
+								<a href="images/AS/as493-2.jpg" data-lightbox="gallery2" style="display: none;"></a>
+								<a href="images/AS/as493-3.jpg" data-lightbox="gallery2" style="display: none;"></a>
+								<a href="images/AS/as493-4.jpg" data-lightbox="gallery2" style="display: none;"></a>
+								<h3>AS Model 493</h3>
+								<p>Wymiary:<br>Szer. X cm x Wys. X cm</p>
+								<ul class="actions">
+								</ul>
+							</section>
 						</div>
 					</div>
-				</section>
+				</div>
+			</section>
+
 
 			<!-- Footer -->
 			<section id="footer" class="wrapper">
@@ -187,6 +218,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="dist/js/lightbox.js"></script>
 
 	</body>
 </html>
